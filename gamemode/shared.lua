@@ -30,7 +30,6 @@ function recursiveInclusion( scanDirectory, isGamemode )
 					end
 					if string.match( fileName, "^cl" ) then
 						AddCSLuaFile( relativePath )
-						
 						if CLIENT then
 							include( relativePath )
 						end
